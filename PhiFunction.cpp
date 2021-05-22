@@ -3,7 +3,7 @@
 using namespace std;
 
 const int N = 1e6;
-int phi[N]; //phi[i] = count of numbers in [1,i] which are co-prime with i
+int phi[N+1]; //phi[i] = count of numbers in [1,i] which are co-prime with i
 
 void precompute() {
     for(int i=1; i<=N; i++) phi[i] = i;
