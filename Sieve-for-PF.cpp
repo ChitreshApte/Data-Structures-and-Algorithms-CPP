@@ -6,18 +6,18 @@ int di[MAXN+1];     // di[i] refers to the lowest prime divisor of i
 
 void Sieve()    // purpose: for finding the prime factorization of a number
 {
-    for(int i=1;i<MAXN;i+=2)// for all odds set it as -1, will change later
+    for(int i=1;i<=MAXN;i+=2)// for all odds set it as -1, will change later
         di[i]=-1;
-    for(int i=2;i<MAXN;i+=2)// for all even set it to 2
+    for(int i=2;i<=MAXN;i+=2)// for all even set it to 2
         di[i]=2;
     for(int i=2;i*i<=MAXN;i++)
         if(di[i]==-1)
         {
-            for(int j=i;j<MAXN;j+=i)
+            for(int j=i;j<=MAXN;j+=i)
                 if(di[j]==-1)
                     di[j]=i;
         }
-    for(int i=3;i<MAXN;i+=2)
+    for(int i=3;i<=MAXN;i+=2)
         if(di[i]==-1)
             di[i]=i;
 }
