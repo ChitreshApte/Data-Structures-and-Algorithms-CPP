@@ -4,6 +4,8 @@
 #define all(v)   (v).begin(), (v).end()
 using namespace std;
 
+//Range sum and point update
+
 class SegmentTree{
 	public:
 	vector<int> st;

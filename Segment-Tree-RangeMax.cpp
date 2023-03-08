@@ -1,6 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+This segments supports
+1) Updating the values of an element in the array
+2) For a range finding the max element and also its count
+*/
+
 class SegmentTree{
     public:
     //first - maximum, second - frequency
